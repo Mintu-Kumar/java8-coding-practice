@@ -223,28 +223,29 @@ public class BfsDfs {
             for(int j=0;j<e;j++){
                 int source = sc.nextInt();
                 int destination = sc.nextInt();
-                //addEdges(source,destination);
-                directedGraphAddEdges(source,destination);
+                addEdges(source,destination);
+                //directedGraphAddEdges(source,destination);
             }
 
             /**
              * Topological sort using DFS
              */
-           int[] result =  topologicalSortByDfs(v,arr);
+          /* int[] result =  topologicalSortByDfs(v,arr);
            for(int res:result)
-               System.out.print(res+" ");
+               System.out.print(res+" ");*/
 
 
             /*if(isCycleDirectedGraph(v,arr))
                 System.out.println("Cycle is present");
             else
                 System.out.println("Cycle is not present");*/
+
             //bfs(2,5);
 
-            /*if(dfs(2,9))
+            if(dfs(2,9))
                 System.out.println("Path is available between source and destination");
             else
-                System.out.println("Path is not available between source and destination");*/
+                System.out.println("Path is not available between source and destination");
            // printGrapgh(arr);
         }
     }

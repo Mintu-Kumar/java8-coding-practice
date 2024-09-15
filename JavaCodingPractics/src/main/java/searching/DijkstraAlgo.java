@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
+/**
+ * Dijkstra's algorithm is an algorithm for find the sortest path between nodes in a weighted graph
+ */
 class Pair implements Comparable<Pair>{
     int v;
     int wt;

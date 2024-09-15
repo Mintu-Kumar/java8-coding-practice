@@ -3,6 +3,11 @@ package searching;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
+/**
+ * Prim's algorithm is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph
+ *  This means it finds a subset of the edges that forms a tree that includes every vertex, where the total
+ *  weight of all the edges in the tree is minimized.
+ */
 class Pair implements Comparable<Pair>{
     int wt;
     int v;
