@@ -2,6 +2,9 @@ package Sorting;
 
 public class HeapSort {
 
+    /**
+     * ref URL - https://www.youtube.com/watch?v=ywx-Onrdx4U&list=PLUcsbZa0qzu3yNzzAxgvSgRobdUUJvz7p&index=32
+     */
     public static void insertionInHeap(int[] arr, int addEle, int arrLen){
         arr[arrLen+1] = addEle;
         int i = arrLen+1;
@@ -36,17 +39,45 @@ public class HeapSort {
         }
     }
 
-    public static void swapElement(int[] arr,int parent,int i){
+    public static void heapify(int[] arr, int n , int i){
+        int larger = i;
+        int l = 2*i+1;
+        int r = 2*i+2;
+        if(l<n && arr[l]>arr[larger])
+            larger = l;
+        if(r<n && arr[r]>arr[larger])
+            larger = r;
+
+        if(larger != i ) {
+            swapElement(arr,i,larger);
+            heapify(arr,n,larger);
+        }
+    }
+
+    public static void buildHeap(int[] arr, int n){
+         for(int i=n/2;i>0;i--){
+             heapify(arr,n,0);
+         }
+    }
+
+    public static void swapElement(int[] arr, int parent,int i){
            int temp = arr[parent];
            arr[parent] = arr[i];
            arr[i] = temp;
     }
     public static void printArray(int[] arr){
-         for(int i=0;i<10;i++)
+         for(int i=0;i<arr.length;i++)
              System.out.print(arr[i]+" ");
     }
+    public static void heapSort(int[] arr, int n){
+
+            for(int i=n;i>=0;i--){
+                swapElement(arr,0,i);
+                heapify(arr,i-1,0);
+            }
+    }
     public static void main(String [] args){
-        int MAX = 1000;
+       /* int MAX = 1000;
         int[] arr = new int[MAX];
          arr[0] = 50;
          arr[1] = 30;
@@ -55,10 +86,14 @@ public class HeapSort {
          arr[4] = 5;
          arr[5] = 20;
          arr[6] = 30;
-        int n = 7;
+        int n = 7;*/
         //int add = 45;
-        deletionInHeap(arr,n-1);
+        int[] arr1 =  new int[]{10,30,50,20,35,15};
+        int len = arr1.length;
+        buildHeap(arr1,len-1);
+       // heapSort(arr1,len-1);
+       // deletionInHeap(arr,n-1);
         //insertionInHeap(arr,add,n-1);
-        printArray(arr);
+        printArray(arr1);
     }
 }
