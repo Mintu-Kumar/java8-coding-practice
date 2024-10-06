@@ -11,8 +11,17 @@ public class CreateNode {
             this.data = data;
         }
     }
+    public void traverse(Node head){
+        Node cur= head;
+        if(head == null)
+            System.out.println("List is empty");
+        while (cur!=null) {
+            System.out.print(cur.data+" ");
+            cur = cur.next;
+        }
+    }
 
-    static Node createNode(){
+    public Node createNode(){
         Node head=null;
         System.out.println("Enter data:");
         int data = sc.nextInt();
