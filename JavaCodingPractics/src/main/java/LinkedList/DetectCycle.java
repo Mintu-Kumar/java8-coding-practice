@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class DetectCycle extends CreateNode{
 
+    /**
+     * this method find the cycle in the linked list
+     * @param head
+     * @return
+     */
     static Node isCycle(Node head){
         Node slow =  head;
         Node fast =  head;
@@ -15,10 +20,16 @@ public class DetectCycle extends CreateNode{
         }
         return null;
     }
+
+    /**
+     * this method return that node from where cycle started
+     * @param head
+     * @return
+     */
     static Node detectFirstNode(Node head){
         Node meet = isCycle(head);
         Node start =  head;
-        while (start != null){
+        while (start != meet){
             start = start.next;
             meet =  meet.next;
         }

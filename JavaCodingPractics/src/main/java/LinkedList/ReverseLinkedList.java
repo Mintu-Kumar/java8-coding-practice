@@ -7,7 +7,7 @@ public class ReverseLinkedList extends CreateNode{
     static Node reverseList(Node head){
         Node cur =  head;
         Node prev =  null;
-        while (cur!= null){
+        while (cur != null){
            Node temp =  cur.next;
            cur.next =  prev;
            prev = cur;
