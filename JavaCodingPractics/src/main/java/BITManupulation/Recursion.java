@@ -15,7 +15,7 @@ public class Recursion {
 
 
     //Q find a string is palindrom or not using recursivly
-    static  boolean isPlindrom(String s, int l, int r)
+   /* static  boolean isPlindrom(String s, int l, int r)
     {
         if(l>=r)
              return true;
@@ -23,5 +23,5 @@ public class Recursion {
             return false
 
         return isPlindrom(s,l+1,r-1);
-    }
+    }*/
 }

@@ -13,7 +13,7 @@ public class FindUniqueElementFromArray {
         }
         // Step 2: Find a set bit (rightmost set bit)
         int setBit = xorAll & -xorAll; // two's compliment = 111
-        // 001 & 111 =
+        // 001 & 111 =001
 
         int num1 =0,num2=0;
         // Step 3: Divide numbers into two groups and XOR them

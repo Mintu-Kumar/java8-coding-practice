@@ -16,32 +16,18 @@ public class InsertionSort {
 
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
-            int key = arr[i];
-            int j = i - 1;
+            int temp = arr[i];// temp = 5
+            int j = i - 1; // j = 2
 
             /* Move elements of arr[0..i-1], that are
                greater than key, to one position ahead
                of their current position */
-            while (j >= 0 && arr[j] > key) {
-                arr[j + 1] = arr[j];
-                j = j - 1;
+            while (j >= 0 && arr[j] > temp) {
+                arr[j + 1] = arr[j];  // ['',12,13,5,6]
+                j--;
             }
-            arr[j + 1] = key;
-            for(int l=0;l<arr.length;l++)
-               System.out.print(arr[l] + " ");
+            arr[j + 1] = temp; //[11,12,13,5,6]
         }
-        /*int temp = 0;
-        for(int i=0;i<arr.length;i++){
-            for(int j=i+1;j<arr.length;j++){
-                if(arr[i]>arr[j]) {
-                    temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
-            }
-//            for(int l=0;l<arr.length;l++)
-//                System.out.print(arr[l] + " ");
-        }*/
         for(int k=0;k<arr.length;k++){
             System.out.print(arr[k]+" ");
         }

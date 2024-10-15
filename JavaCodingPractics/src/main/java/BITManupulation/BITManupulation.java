@@ -7,6 +7,12 @@ public class BITManupulation {
      * example =  100 =  answer = 3
      * @return
      */
+
+    /**
+     * Imp concept - replace this to this if(a%2==0) to if(a&1 ==0)
+     *
+     */
+
     static int findFirstSetBit() {
         int a = 4, count = 1;
 
