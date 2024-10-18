@@ -29,7 +29,6 @@ public class CreateNode {
             return null;
 
         head =  new Node(data);
-        System.out.println("Enter next element:");
         head.next =  createNode();
 
         return head;

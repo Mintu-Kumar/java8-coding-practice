@@ -15,12 +15,16 @@ public class Recursion {
 
 
     //Q find a string is palindrom or not using recursivly
+<<<<<<< Updated upstream
    /* static  boolean isPlindrom(String s, int l, int r)
+=======
+    /*static  boolean isPlindrom(String s, int l, int r)
+>>>>>>> Stashed changes
     {
         if(l>=r)
              return true;
         if(s[l] != s[r])
-            return false
+            return false;s
 
         return isPlindrom(s,l+1,r-1);
     }*/

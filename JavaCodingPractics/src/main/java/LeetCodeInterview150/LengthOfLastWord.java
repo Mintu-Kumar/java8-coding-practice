@@ -9,7 +9,7 @@ public class LengthOfLastWord {
 
   public static void lengthOfLastWord(String s){
 
-     List<String>string =  Arrays.asList(s.split(" "));
+     List<String> string =  Arrays.asList(s.split(" "));
       Collections.reverse(string);
      String rev =  string.stream().collect(Collectors.joining(" "));
       System.out.println(rev);
