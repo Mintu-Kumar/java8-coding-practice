@@ -11,7 +11,7 @@ public class DiameterOfBT extends CreateBinaryTree{
 
        int lh =  calculateDiameter(root.left);
        int rh =  calculateDiameter((root.right));
-       ans = Math.max(ans,1+lh+rh);
+       ans = Math.max(ans,1+lh+rh);  // if we comment this line then this function will give the height of the binary tree
         return 1+Math.max(rh,lh);
     }
     public static void main(String[] args){

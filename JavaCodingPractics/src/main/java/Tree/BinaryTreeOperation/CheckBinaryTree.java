@@ -11,7 +11,7 @@ public class CheckBinaryTree extends CreateBinaryTree{
 
         if(root.data < min || root.data > max)
             return false;
-
+        // ek binary tree mai equal value allowed nhi hoti isiliye yha root.data-1 ya plus 1 kiya hua hai
         return (isBst(root.left, min, root.data-1) && isBst(root.right, root.data+1,max));
 
     }

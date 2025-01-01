@@ -2,7 +2,8 @@ package Tree.BinaryTreeOperation;
 
 import java.util.*;
 
-public class VerticalOrderTraversalInBST extends CreateBinaryTree{
+public class
+VerticalOrderTraversalInBST extends CreateBinaryTree{
 
    static class Pair{
         int hd;

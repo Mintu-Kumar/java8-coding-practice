@@ -2,7 +2,7 @@ package Tree.BinaryTreeOperation;
 
 import java.util.Scanner;
 
-public class DeleteElementInBST extends CreateBinaryTree{
+public class  DeleteElementInBST extends CreateBinaryTree{
 
     static Node deleteElement(Node root, int target){
         if(root == null)
@@ -38,7 +38,7 @@ public class DeleteElementInBST extends CreateBinaryTree{
         sc =  new Scanner(System.in);
         DeleteElementInBST deleteElementInBST =  new DeleteElementInBST();
         Node root =  deleteElementInBST.createNode();
-        Node newTree =  deleteElement(root,50);
+        Node newTree =  deleteElement(root,4);
         deleteElementInBST.inOrder(newTree);
     }
 }
