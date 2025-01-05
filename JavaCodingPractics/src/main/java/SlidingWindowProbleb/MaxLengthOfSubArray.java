@@ -2,7 +2,6 @@ package SlidingWindowProbleb;
 
 /**
  * you have given an array find the max sub array length which sum is equal to given number
- *
  */
 public class MaxLengthOfSubArray {
 

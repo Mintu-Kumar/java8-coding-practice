@@ -29,6 +29,8 @@ Explanation: There are no nice substrings.
  */
 
 
+// This code taken from somewhere
+
 public class LongestNiceSubstring {
 
     public static boolean isNice(String s) {

@@ -4,12 +4,13 @@ import java.util.LinkedHashMap;
 
 public class LongestSubstringWithoutRepeatingCharacters {
 
-
-    public static void longestSubstring(String s){
+//https://javaconceptoftheday.com/find-longest-substring-without-repeating-characters-java/
+    public static int longestSubstring(String s){
         char[] c =  s.toCharArray();
         int longestStringLength =0;
         String longestString = null;
 
+        //using LinkedHashMap because it is preserve the order
         LinkedHashMap<Character,Integer> map =  new LinkedHashMap<>();
         for(int i=0;i<c.length;i++){
             Character  ch = c[i];
@@ -27,16 +28,14 @@ public class LongestSubstringWithoutRepeatingCharacters {
             }
 
         }
-        System.out.println("Longest string: - "+ longestString);
-        System.out.println("Length of that string:-"+ longestStringLength);
+        System.out.println(longestStringLength);
+        return longestString.length();
 
     }
     public static void main(String[] args){
-        longestSubstring("javaconceptoftheday");
+        System.out.println(longestSubstring("javaconceptoftheday"));
 
-        System.out.println("==========================");
 
-        longestSubstring("thelongestsubstring");
 
     }
 }
