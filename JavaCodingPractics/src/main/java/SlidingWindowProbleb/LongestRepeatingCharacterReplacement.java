@@ -36,6 +36,7 @@ public class LongestRepeatingCharacterReplacement {
 
             if(r-l+1-maxFreq>k){
                 map.put(s.charAt(l),map.get(s.charAt(l))-1);
+                l++;
             }
             result =Math.max(maxFreq,r-l+1);
         }

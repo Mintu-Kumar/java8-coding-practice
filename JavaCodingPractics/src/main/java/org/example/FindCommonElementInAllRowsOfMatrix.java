@@ -23,7 +23,7 @@ public class FindCommonElementInAllRowsOfMatrix {
                 }
             }
         }
-
+        System.out.println(elementCountMap);
           Set<Map.Entry<Integer,Integer>> entrySet =  elementCountMap.entrySet();
            for(Map.Entry<Integer,Integer> entry:entrySet){
                 if(entry.getValue() == rows)

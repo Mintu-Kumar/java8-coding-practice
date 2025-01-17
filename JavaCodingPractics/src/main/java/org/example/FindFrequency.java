@@ -10,7 +10,7 @@ public class FindFrequency
 {
 
     /**
-     *  Find frequency of chanracter in the given string
+     *  Find frequency of character in the given string
      * @param args
      */
     public static void main(String []arg){

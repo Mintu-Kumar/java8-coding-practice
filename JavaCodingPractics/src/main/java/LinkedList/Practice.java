@@ -1,111 +1,97 @@
 package LinkedList;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Practice {
-   static Scanner sc;
+   static Scanner sc ;
+public static class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data = data;
+    }
+}
 
-   public static class Node{
-       int data;
-       Node next;
+public static Boolean detectCycle(Node root){
+    if(root == null)
+        System.out.println("List is empty");
+    Node slow =root,fast=root;
+     while (fast != null && fast.next != null){
+         slow = slow.next;
+         fast = fast.next.next;
+         if(fast == slow)
+             return true;
+     }
+     return false;
+}
 
-       Node(int data){
-           this.data =  data;
-       }
-   }
+public static Node reverseList(Node start){
+    Node t1=null;
+    Node t2=null;
+    while(start!=null){
+        t2= start.next;
+        start.next =t1;
+        t1 =  start;
+        start=t2;
+    }
+    return t1;
+}
 
-   public Node createNode(){
-       Node head = null;
-       System.out.println("Enter data:-");
-       int data = sc.nextInt();
-       if(data == -1)
-           return null;
+public static Node createNode(){
+    Node root = null;
+    int data =  sc.nextInt();
+    if(data==-1)
+        return null;
+    root =  new Node(data);
+    root.next =  createNode();
 
-       head = new Node(data);
-       head.next = createNode();
+    return root;
+}
 
-       return head;
-   }
+public static void printList(Node root){
 
-   public void traverseList(Node head){
-       Node next = head;
-       if(head == null)
-           return;
+    if(root == null){
+        System.out.println("List is empty");
+    }
+    while (root !=null)
+    {
+        System.out.print(root.data+" ");
+        root =  root.next;
+    }
+}
 
-       while (next != null){
-           System.out.print(next.data+" ");
-           next = next.next;
-       }
-   }
+public static Boolean palindromCheck(Node root){
+    Node middle =returnMiddleNode(root);
+    Node last = reverseList(middle.next);
+    Node cur =  root;
+    while (last!=null){
+        if(cur.data != last.data)
+            return false;
 
-   public void deleteNode(Node head, int pos){
+        cur =  cur.next;
+        last =  last.next;
+    }
+    return true;
+}
+public static Node returnMiddleNode(Node root){
+    if(root == null)
+        System.out.println("List is empty");
+    Node slow =root,fast=root;
+    while (fast != null && fast.next != null){
+        slow = slow.next;
+        fast = fast.next.next;
 
-       if(pos == 0)
-       {
-           head =head.next;
-           return ;
-       }
-       Node prev = head;
-       for (int i=0;i<pos-1;i++)
-           prev = prev.next;
-
-       prev.next = prev.next.next;
-
-   }
-
-   public boolean detectCycle(Node head){
-        if(head == null)
-            System.out.println("List is empty");
-
-        Node slow= head,fast=head;
-        while (fast.next != null && fast !=null ){
-            slow = slow.next;
-            fast = fast.next.next;
-            if(fast==slow)
-                return true;
-        }
-        return false;
-   }
-
-   public Node insterNode(Node head, int pos,int  newData){
-       Node newNode = new Node(newData);
-       if(pos == 0){
-
-           newNode.next = head;
-           head = newNode;
-           return head;
-       }
-       Node prev = head;
-       for(int i=0;i<pos-1;i++){
-           prev = prev.next;
-       }
-       newNode.next = prev;
-       prev.next = newNode;
-
-       return head;
-   }
-
+    }
+    return slow;
+}
     public static void main(String[] args){
-        sc =  new Scanner(System.in);
-        Practice p =  new Practice();
-        Node head = p.createNode();
-       Node newList = p.insterNode(head,3,7);
-      // System.out.println("Before deletion ");
-        p.traverseList(newList);
-      //  p.deleteNode(head,3);
-      //  System.out.println("After deletion");
-      //  p.traverseList(head);
-       /* Node head = new Node(10);
-        head.next = new Node(20);
-        head.next.next =  new Node(30);
-        head.next.next.next =  new Node(40);
-        head.next.next.next.next =  new Node(50);
-        //head.next.next.next.next.next = head.next.next;
-        if(p.detectCycle(head))
-            System.out.println("cycle present");
+       sc =  new Scanner(System.in);
+       Node root = createNode();
+        if(palindromCheck(root))
+            System.out.println("Palindrom");
         else
-            System.out.println("Cycle is not present");*/
+            System.out.println("not palindrom");
+
 
     }
 }

@@ -24,11 +24,7 @@ public class FindMaxSum {
                 sum = sum-arr[l];
             l++;
             r++;
-            if(arr[r]<0)
-                sum = sum+arr[r];
-            else
-                sum = sum+arr[r];
-
+            sum = sum+arr[r];
             max = Math.max(sum,max);
 
         }

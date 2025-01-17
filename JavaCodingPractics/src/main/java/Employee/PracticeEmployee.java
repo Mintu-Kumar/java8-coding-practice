@@ -30,36 +30,54 @@ public class PracticeEmployee {
         /**
          * What is the average salary of male and female employees?
          */
+//       Map<String ,Double> map= employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.averagingDouble(Employee::getSalary)));
+//        System.out.println(map);
         /**
          * 1. How many male and female employees are there in the organization?
          */
+//        Map<String,Long> count = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));
+//        System.out.println(count);
         /**
          *  Print the name of all departments in the organization?
          */
+      //  employeeList.stream().map(e->e.getDepartment()).distinct().forEach(System.out::println);
         /**
          * What is the average age of male and female employees?
          */
+//        Map<String,Double> map =  employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.averagingDouble(Employee::getAge)));
+//        System.out.println(map);
         /**
          *  Get the details of highest paid employee in the organization?
          */
+    //   System.out.println( employeeList.stream().max(Comparator.comparing(Employee::getSalary)));
         /**
          * Get the names of all employees who have joined after 2015?
          */
+//        List<Employee> list =  employeeList.stream().filter(e->e.getYearOfJoining()> 2015).collect(Collectors.toList());
+//        System.out.println(list);
         /**
          * Count the number of employees in each department?
          */
+//        Map<String,Long> map = employeeList.stream().collect(Collectors.groupingBy(Employee::getDepartment,Collectors.counting()));
+//        System.out.println(map);
         /**
          * What is the average salary of each department?
          */
+//        Map<String,Double> map = employeeList.stream().collect(Collectors.groupingBy(Employee::getDepartment,Collectors.averagingDouble(Employee::getSalary)));
+//        System.out.println(map);
         /**
          * Get the details of youngest male employee in the product development department?
          */
+      //  System.out.println(employeeList.stream().filter(e->e.getDepartment() == "Product Development").min(Comparator.comparing(Employee::getAge)).get());
         /**
          * Who has the most working experience in the organization?
          */
+      //  System.out.println(employeeList.stream().min(Comparator.comparing(Employee::getYearOfJoining)));
         /**
          * How many male and female employees are there in the sales and marketing team?
          */
+//        Map<String,Long> map = employeeList.stream().filter(e->e.getDepartment() == "Sales And Marketing").collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));
+//        System.out.println(map);
         /**
          * What is the average salary of male and female employees?
          */
