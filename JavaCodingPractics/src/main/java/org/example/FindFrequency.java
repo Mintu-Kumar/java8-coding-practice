@@ -13,7 +13,7 @@ public class FindFrequency
      *  Find frequency of character in the given string
      * @param args
      */
-    public static void main(String []arg){
+    public static void main(String [] args){
 
         String inputString = "java concept of the day";
         Map<Character,Long> map =  inputString.chars()

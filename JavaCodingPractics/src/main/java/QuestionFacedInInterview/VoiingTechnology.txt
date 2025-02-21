@@ -1,0 +1,64 @@
+
+====== SQL ======
+1. Consider two tables, one is employee table and second is Manager table where employee id is mapped to  manager table with column as EmployeeID. Write a query to update the Employee salary with an increment of 100 whose manager name is “TestManager”.
+
+Employee
+Eid Ename Salary
+
+Manager
+Mid Mname Eid
+
+
+2. update employee s
+Write a query to get the list of employees and their details who are having second highest salary. Assuming multiple employees can have same salary.
+
+3. Create DB schema with id, name, salary
+4. Store procedure that has 2 input and i output
+5. we have 2 table 1st one has 5 record and 2nd one has 7 record and both has 2 matching record inner join m and full outer join m kitne row return honge
+6. Write a query to get the product details based on the latest version of each product
+    Id Name version
+    1   A1    1
+    2   B1    1
+    3   A1    2
+    4   C1    1
+
+7 What is ACID property.
+8. Different isolation in SQL?
+
+======== Java 8 ===============
+1. Pattern matching in switch case -  introduce in java 17
+2. What is singleton class. write code to implement
+3. How can access private method from outside the class
+4. Write Junit testcase for private method.
+6. Implement exception in java 8.
+7. Diff between Iterator and listIterator.
+8. Coding question -  find the duplicate element from array. using java 8
+9.
+================ Spring boot =========
+1. Centralized request logging in spring boot login.
+2. How to select profile in spring boot run time(hosting time)
+3. How to implement caching in spring boot.
+4. How to disable autoconfiguration in springboot.
+5. State management in Rest framework?
+6. How to implement concurrent request in rest APIs?
+7. CORS in spring boot?
+8. Session management in spring boot ?
+9. What does autowiring ?
+10. write the code to inject dependency ?
+11.
+
+========= microservice ===================
+1. Service discovery in microservice.
+2. how to manage data consistency in microservice?
+3. event sourcing in building scalable microservice?
+4. how microservice communicate each other? Explain all ways.
+5. Quest -  write rest controller that return query parameter in response?
+
+============ React =========================
+1. write class based component and functional based component.
+2. how to create dynamic route?
+3. How to update variable from parent to child and chile to parent?
+4. what is call back function?
+5. How can we use Higher Order components to manipulate the props passed to the WrappedComponent?
+
+

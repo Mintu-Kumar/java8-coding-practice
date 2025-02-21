@@ -4,16 +4,16 @@ package searching;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
-class Pair implements Comparable<Pair>{
+class Pairr implements Comparable<Pairr>{
     int v;
     int wt;
-    Pair(int v,int wt){
+    Pairr(int v,int wt){
         this.v = v;
         this.wt = wt;
     }
 
     @Override
-    public int compareTo(Pair o) {
+    public int compareTo(Pairr o) {
         return Integer.compare(this.wt,o.wt);
     }
 
@@ -27,12 +27,12 @@ public class PrintArrayList {
 
     public static int minimumSpannigTree(int v,ArrayList<ArrayList<ArrayList<Integer>>> adj){
         boolean[] vis =  new boolean[v];
-        PriorityQueue<Pair> pq =  new PriorityQueue<>();
-        pq.add(new Pair(0,0));
+        PriorityQueue<Pairr> pq =  new PriorityQueue<>();
+        pq.add(new Pairr(0,0));
         int ans =0;
 
         while(!pq.isEmpty()){
-            Pair p = pq.poll();
+            Pairr p = pq.poll();
             int cur = p.v;
 
             if(vis[cur])
@@ -45,7 +45,7 @@ public class PrintArrayList {
                 int vertex = list.get(0);
                 int weight =  list.get(1);
                 if(!vis[vertex])
-                    pq.add(new Pair(vertex,weight));
+                    pq.add(new Pairr(vertex,weight));
             }
         }
 

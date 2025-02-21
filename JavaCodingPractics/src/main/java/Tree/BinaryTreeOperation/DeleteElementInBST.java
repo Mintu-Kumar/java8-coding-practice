@@ -18,7 +18,7 @@ public class  DeleteElementInBST extends CreateBinaryTree{
             else if(root.right == null)
                 return  root.left;
 
-            root.data =  minValue(root.left);
+            root.data =  minValue(root.right);
 
             root.right =  deleteElement(root.right,root.data);
         }

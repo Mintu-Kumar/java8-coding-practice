@@ -11,6 +11,7 @@ public class Practice {
     public static void main(String []args)
     {
 
+
         /*
         Given an integer array and target element, find all pair whose sum is eqal to target
         int arr[] = {1,2,3,4,5,6,7};

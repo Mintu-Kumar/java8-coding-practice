@@ -2,7 +2,7 @@ package Tree.BinaryTreeOperation;
 
 import java.util.Scanner;
 
-public class CheckBinaryTree extends CreateBinaryTree{
+public class  CheckBinaryTree extends CreateBinaryTree{
 
     static boolean isBst(Node root,int min, int max)
     {

@@ -60,7 +60,7 @@ public class BfsDfs {
        return false;
     }
     /**
-     * This DFS methos is to detect the cycle in the undirected graph
+     * This DFS method is to detect the cycle in the undirected graph
      *
      * @param v
      * @param arr
@@ -174,7 +174,7 @@ public class BfsDfs {
         return false;
     }
     /**
-     * This method to find sortest path between given source and destination
+     * This method is to find sortest path between given source and destination
      *
      * @param source
      * @param destination

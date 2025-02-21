@@ -11,7 +11,6 @@ public class MergeTwoArrayInSortedOrderWithoutDuplicate {
         int[] b = new int[] {8, 1, 9, 5};
 
         int[] c = IntStream.concat(Arrays.stream(a),Arrays.stream(b)).distinct().sorted().toArray();
-
         System.out.println(Arrays.toString(c));
     }
 }
