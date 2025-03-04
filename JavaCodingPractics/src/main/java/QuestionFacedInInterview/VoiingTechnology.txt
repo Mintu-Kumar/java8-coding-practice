@@ -1,4 +1,4 @@
-
+HR number - 9510687579
 ====== SQL ======
 1. Consider two tables, one is employee table and second is Manager table where employee id is mapped to  manager table with column as EmployeeID. Write a query to update the Employee salary with an increment of 100 whose manager name is “TestManager”.
 
@@ -10,10 +10,10 @@ Mid Mname Eid
 
 
 2. update employee s
-Write a query to get the list of employees and their details who are having second highest salary. Assuming multiple employees can have same salary.
+Write a query to get the list of employees and their details who are having second-highest salary. Assuming multiple employees can have same salary.
 
 3. Create DB schema with id, name, salary
-4. Store procedure that has 2 input and i output
+4. Store procedure that has 2 input and 1 output
 5. we have 2 table 1st one has 5 record and 2nd one has 7 record and both has 2 matching record inner join m and full outer join m kitne row return honge
 6. Write a query to get the product details based on the latest version of each product
     Id Name version
@@ -22,8 +22,9 @@ Write a query to get the list of employees and their details who are having seco
     3   A1    2
     4   C1    1
 
-7 What is ACID property.
+7. What is ACID property.
 8. Different isolation in SQL?
+Scenario based quest - https://www.geeksforgeeks.org/database-interview-questions/
 
 ======== Java 8 ===============
 1. Pattern matching in switch case -  introduce in java 17
@@ -31,11 +32,15 @@ Write a query to get the list of employees and their details who are having seco
 3. How can access private method from outside the class
 4. Write Junit testcase for private method.
 6. Implement exception in java 8.
-7. Diff between Iterator and listIterator.
+7. Diff between Iterator and splitIterator.
 8. Coding question -  find the duplicate element from array. using java 8
-9.
+9. what is synchronized method ?
+10. how we do achieve serialization and cloneable?
+11. How to handle synchronized method with concurrent thread?
+12. write java8 code which take 2 interger and return result using lamda expression?
+
 ================ Spring boot =========
-1. Centralized request logging in spring boot login.
+1. Centralized request logging in spring boot login.  - https://medium.com/@gudise.ashok/centralized-logging-using-aop-for-your-spring-boot-app-the-ancient-ones-way-logging-with-power-5a0089809505
 2. How to select profile in spring boot run time(hosting time)
 3. How to implement caching in spring boot.
 4. How to disable autoconfiguration in springboot.
@@ -62,3 +67,15 @@ Write a query to get the list of employees and their details who are having seco
 5. How can we use Higher Order components to manipulate the props passed to the WrappedComponent?
 
 
+HSBC cred
+Pass - Passw0rd.@123
+
+atllasian
+Pass- SD3ZvHAE35!ppRz
+
+
+========================Genera Question =======================
+1. Diff between Shallow copy and deep copy in collection?
+2. Diff between Shallow subList() and slice()?
+3. What is weakHashMap() and when would you use it?
+4. What is the purpose of map interface?
