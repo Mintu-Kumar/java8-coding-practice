@@ -31,8 +31,8 @@ public class OperationOnEmployeeList {
         /**
          * 1. How many male and female employees are there in the organization?
          */
-       /* Map<String,Long> map =  employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));
-        System.out.println(map);*/
+        Map<String,Long> map =  employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));
+        System.out.println(map);
 
         /**
          *  Print the name of all departments in the organization?

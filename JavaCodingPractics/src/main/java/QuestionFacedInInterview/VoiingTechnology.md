@@ -42,7 +42,7 @@ Scenario based quest - https://www.geeksforgeeks.org/database-interview-question
 ================ Spring boot =========
 1. Centralized request logging in spring boot login.  - https://medium.com/@gudise.ashok/centralized-logging-using-aop-for-your-spring-boot-app-the-ancient-ones-way-logging-with-power-5a0089809505
 2. How to select profile in spring boot run time(hosting time)
-3. How to implement caching in spring boot.
+3. How to implement caching in spring boot. - https://www.youtube.com/watch?v=3ctbKXSh_kg&list=PLq3uEqRnr_2HY6LMQsbvsK4btj51sWhBS&index=10
 4. How to disable autoconfiguration in springboot.
 5. State management in Rest framework?
 6. How to implement concurrent request in rest APIs?
@@ -50,7 +50,6 @@ Scenario based quest - https://www.geeksforgeeks.org/database-interview-question
 8. Session management in spring boot ?
 9. What does autowiring ?
 10. write the code to inject dependency ?
-11.
 
 ========= microservice ===================
 1. Service discovery in microservice.
@@ -68,13 +67,13 @@ Scenario based quest - https://www.geeksforgeeks.org/database-interview-question
 
 
 HSBC cred
-Pass - Passw0rd.@123
+Pass - 9Yt9C;X@{r7u
 
-atllasian
+Atlassian
 Pass- SD3ZvHAE35!ppRz
 
 
-========================Genera Question =======================
+======================== Genera Question =======================
 1. Diff between Shallow copy and deep copy in collection?
 2. Diff between Shallow subList() and slice()?
 3. What is weakHashMap() and when would you use it?
