@@ -9,19 +9,19 @@ public class LevelOrderTraversal extends CreateBinaryTree{
     static void printLevelOrder(Node root){
         Queue<Node> q = new LinkedList<>();
         q.add(root);
-        q.add(null);
+       // q.add(null);
         while (!q.isEmpty()){
           Node cur = q.poll();
             /**
              * line 18 to 24 is for print data in level we can remove this code and line 12 code also.
              */
-            if(cur == null){
+         /*   if(cur == null){
                 if(q.isEmpty())
                     return;
 
                 q.add(null);
                 System.out.println();
-            }
+            }*/
             System.out.print(cur.data+" ");
 
             if(cur.left !=null)

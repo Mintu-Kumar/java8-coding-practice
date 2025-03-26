@@ -25,7 +25,10 @@ public class Student {
         Student s2 =  new Student("Anu",2);
         Student s3 =  new Student("Mintu",1);
         Student s4 =  s1;
-       /* System.out.println(s1==s2);
+        /*System.out.println(s1.equals(s2));
+        System.out.println(s1.equals(s3));
+        System.out.println(s1.equals(s4));*/
+        /*System.out.println(s1==s2);
         System.out.println(s1==s3);
         System.out.println(s1==s4);*/
 

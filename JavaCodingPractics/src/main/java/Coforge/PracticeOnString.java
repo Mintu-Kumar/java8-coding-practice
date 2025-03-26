@@ -1,9 +1,7 @@
 package Coforge;
 
 import java.util.*;
-import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class PracticeOnString {
 
@@ -20,6 +18,8 @@ public class PracticeOnString {
      * 10. String Join with Streams for Collections
      * 11. Filter all words which starts with J - Arrays.asList("Java", "Python", "JavaScript", "Ruby", "Java");
      * 12 String capitalization fist letter of each work -  String str = "java 8 features";
+     * 13. How to count the number of vowels and consonants in a string?  -- imp
+     * 14. How to check if a string contains only digits?  -- imp
      * @param args
      */
     public static void main(String[] args){
@@ -50,9 +50,21 @@ public class PracticeOnString {
         System.out.println(startWithJ);*/
 
         //@12
-        String str = "java 8 features";
+       /* String str = "java 8 features";
          String st =   Arrays.stream(str.split(" ")).map(word->word.substring(0,1).toUpperCase()+word.substring(1)).collect(Collectors.joining(" "));
-        System.out.println(st);
+        System.out.println(st);*/
+
+        //@13
+        /*   String str = "Java Programming";
+           Map<Boolean,Long> result =  str.toLowerCase().chars().mapToObj(c->(char)c)
+                    .collect(Collectors.partitioningBy(c->"aeiou".indexOf(c)!=-1,Collectors.counting()));
+            System.out.println(result.get(true));
+            System.out.println(result.get(false));*/
+
+        //@14
+         /*String str = "12345";
+        boolean status = str !=null&& !str.isEmpty() && str.chars().allMatch(Character::isDigit);
+        System.out.println(status);*/
 
 
     }

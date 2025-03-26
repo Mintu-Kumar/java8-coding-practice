@@ -26,7 +26,7 @@ Basic Spring Boot Questions
         15. What is the difference between @Component, @Service, and @Repository in Spring Boot?
         16. What are Spring Profiles and how do you use them in Spring Boot?
         17. Explain the Spring Boot logging mechanism.
-        18. What is the use of @ConfigurationProperties annotation in Spring Boot?
+        18. What is the use of @Configuration Properties annotation in Spring Boot?
         19 How do you create a RESTful web service in Spring Boot?
         20 How does Spring Boot handle dependency injection?
         Ans - Spring Boot leverages DI to manage how objects are created, configured, and injected into classes that require them

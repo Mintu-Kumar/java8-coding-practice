@@ -19,7 +19,7 @@ public class PrimsAlgo {
                 continue;
             }
             ans+=cur.wt;
-            vis[u] = true;
+
             ArrayList<ArrayList<Integer>> neighbors = adj.get(u);
             for(ArrayList<Integer> list: neighbors)
             {

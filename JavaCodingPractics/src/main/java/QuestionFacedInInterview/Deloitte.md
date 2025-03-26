@@ -2,7 +2,7 @@
 
 1. Service Registry and its uses.
 Ans - A Service Registry is a centralized database that maintains a list of all available microservices in a distributed system. Each service instance (or node) registers itself with the registry when it starts, and when the service is no longer needed, it deregisters itself.
-2. how do you declare the host for each servies and how they communicated using Service registry how do they pick up the host.
+2. How do you declare the host for each servies and how they communicated using Service registry how do they pick up the host.
 3. Config and how it is registered.
 4. when you change a property in application.yml in config, how does the client pick up the change automatically
 5. what is difference between comparator(custom order) and comparable(natural order).

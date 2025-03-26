@@ -74,7 +74,7 @@ public class TopologicalSort {
     public  static void main(String[] args){
 
         try(Scanner sc =  new Scanner(System.in)){
-            System.out.println("Enter number of vertex and edge of graph respectivily");
+            System.out.println("Enter number of vertex and edge of graph respectively");
             int v = sc.nextInt();
             int e = sc.nextInt();
             TopologicalSort  graphTraverse = new TopologicalSort(v);
