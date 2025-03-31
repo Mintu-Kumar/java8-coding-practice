@@ -53,7 +53,7 @@ public class FindCycleInUndirectedGraph {
         return false;
     }
     /**
-     * This DFS methos is to detect the cycle in the undirected graph
+     * This DFS method is to detect the cycle in the undirected graph
      *
      * @param v
      * @param arr

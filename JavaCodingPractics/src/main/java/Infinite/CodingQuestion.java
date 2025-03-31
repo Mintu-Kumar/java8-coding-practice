@@ -3,8 +3,8 @@ package Infinite;
 /**
  * Question asked in interview
  *
- * 1. what is pre-destroyed and post  in spring
- * 2. what is pre-construct and post in spring
+ * 1. what is post-destroyed in spring
+ * 2. what is pre-construct in spring
  * 3. AOP concept in spring
  * 4. What is promise in java-script
  * 5. When we annotate any class with @component annotation then spring register this class as bean in spring container

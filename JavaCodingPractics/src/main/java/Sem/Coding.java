@@ -2,6 +2,10 @@ package Sem;
 
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Write code to implement concurrentHashMap where one thread will read the value and
+ * 2nd thread will write the value in the thread
+ */
 public class Coding {
   static  ConcurrentHashMap<Character,Integer>  map;
     class MyThread implements Runnable{

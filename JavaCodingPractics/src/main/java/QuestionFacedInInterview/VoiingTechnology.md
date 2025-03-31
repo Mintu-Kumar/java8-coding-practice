@@ -1,12 +1,12 @@
 HR number - 9510687579
-====== SQL ======
+====== SQL ====== 
 1. Consider two tables, one is employee table and second is Manager table where employee id is mapped to  manager table with column as EmployeeID. Write a query to update the Employee salary with an increment of 100 whose manager name is “TestManager”.
 
-Employee
-Eid Ename Salary
-
-Manager
-Mid Mname Eid
+    Employee
+    Eid Ename Salary
+    
+    Manager
+    Mid Mname Eid
 
 
 2. update employee s
@@ -31,13 +31,15 @@ Scenario based quest - https://www.geeksforgeeks.org/database-interview-question
 2. What is singleton class. write code to implement
 3. How can access private method from outside the class
 4. Write Junit testcase for private method.
-6. Implement exception in java 8.
-7. Diff between Iterator and splitIterator.
-8. Coding question -  find the duplicate element from array. using java 8
-9. what is synchronized method ?
-10. how we do achieve serialization and cloneable?
-11. How to handle synchronized method with concurrent thread?
-12. write java8 code which take 2 interger and return result using lamda expression?
+5. Implement exception in java 8.
+6. Diff between Iterator and splitIterator.
+Ans - **Iterator** - Works sequentially; does not support parallel processing. Provides hasNext(), next(), and remove(). method
+      **SplitIterator** - Supports splitting the data structure into multiple parts for parallel execution. Provides tryAdvance(), forEachRemaining(), and trySplit().
+7. Coding question -  find the duplicate element from array. using java 8
+8. what is synchronized method ?
+9. How we do achieve serialization and cloneable?
+10. How to handle synchronized method with concurrent thread?
+11. write java8 code which take 2 integer and return result using lamda expression?
 
 ================ Spring boot =========
 1. Centralized request logging in spring boot login.  - https://medium.com/@gudise.ashok/centralized-logging-using-aop-for-your-spring-boot-app-the-ancient-ones-way-logging-with-power-5a0089809505

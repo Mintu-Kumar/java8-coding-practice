@@ -25,3 +25,7 @@ Ans -
    **Custom utility method**: This could be any custom method you have defined in your bean.
    **Custom destroy() method**: If the bean implements DisposableBean or has a custom destruction method specified via @PreDestroy or destroy-method, it is called when the container is shutting down.
 8. What all annotation you have used in spring boot.
+
+
+============  Other interview with diff email ========
+1. 
