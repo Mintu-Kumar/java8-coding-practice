@@ -19,11 +19,6 @@ public class ReverseString {
 
       String reverseString =   list.stream().collect(StringBuilder::new,
                 (sb,c)->sb.insert(0,c),StringBuilder::append).toString();
-
         System.out.println(reverseString);
-
-
-
-
     }
 }

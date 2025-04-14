@@ -1,7 +1,7 @@
 **DELOITTE**
 
 1. Service Registry and its uses.
-Ans - A Service Registry is a centralized database that maintains a list of all available microservices in a distributed system. Each service instance (or node) registers itself with the registry when it starts, and when the service is no longer needed, it deregisters itself.
+Ans - A Service Registry is a centralized database that maintains a list of all available microservices in a distributed system. Each service instance (or node) registers itself with the registry when it starts, and when the service is no longer needed, it de-registers itself.
 2. How do you declare the host for each servies and how they communicated using Service registry how do they pick up the host.
 3. Config and how it is registered.
 4. when you change a property in application.yml in config, how does the client pick up the change automatically
@@ -22,7 +22,7 @@ Ans - A Service Registry is a centralized database that maintains a list of all 
 19. what is static key word. if a variable is defined as static can it be printed in main.
 20. exceptions types of exceptions.
 21. difference between throws and throw.
-22. synchronization, where it is used and why.?
+22. synchronization, where it is used and why?
 23. what is load balancer and how do we implement it in the service.
 24. client side load balancer and server side load balancer.
 25. If I have a huge list of employees list and how can each employee has again a lot of data, in this scenario how do we improve the performance.(using parallel stream).

@@ -14,12 +14,12 @@
 3. Stream API is Lazy Loading or Eager Loading?
 4. All intermediate and terminal operation?
 5. Program -  Find 3rd max number in given integer number
-6. What is singleton class. Write the code for that ?
+6. What is singleton class. Write the code for that?
 7. How to get the list of all bean in spring boot which is register in spring container?
 8. What is the default scope of bean ?
 9. What does concurrent hashmap ? how is it differing from traditional hashmap?
    explain with an example.
-10. All traditional method of collection is mutable ?
+10. All traditional method of collection is mutable?
 11. What are the benefits of using Spring Boot?
 
 

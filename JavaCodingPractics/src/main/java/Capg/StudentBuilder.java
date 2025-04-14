@@ -1,7 +1,5 @@
 package Capg;
 
-import searching.PrimsAlgo;
-
 public class StudentBuilder {
 
     private String fName;

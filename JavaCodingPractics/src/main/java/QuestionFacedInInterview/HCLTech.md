@@ -23,7 +23,7 @@
 4. How to call static method from interface
 5. What does @configuration do
 6. What if there are 2 beans of the same type
-7. What happenes when we annotate a method with @ transactional
+7. What happens when we annotate a method with @ transactional
 8. What are the types of advices in AOP
 9. Explain after returning and after throwing in AOP
 10. what is joinpoint and pointcut
