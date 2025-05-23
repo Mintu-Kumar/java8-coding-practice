@@ -19,11 +19,12 @@
 15. Find 3rd max number in given integer number
 
 
-===== Java Interview Question ====
+===== Java Interview Question ====\
 
-1. How do you ensure that the class is immutable;
+
+1. How do you ensure that the class is immutable; -  CapG
 2. What is Immutable?
-3. what is difference between comparator(custom order) and comparable(natural order).
+3. what is difference between comparator[compare()](custom order) and comparable[compareTo()](natural order).
 4. difference between .equal() and ==
 5. Boxing, unboxing and typecasting.
 6. final key word, what happens if we declare a variable as final, can we print in the main method.
@@ -82,18 +83,66 @@
 
 ===== Spring Boot Interview Question =====
 
-1. Diff between @Bean and @Service
+1. Diff between @Bean and @Service  
+   Ans -   Both @Bean and @Service are annotations used for defining beans that are managed by the Spring container
+    **Bean**
+2. 
+            **Purpose**: Declares a bean manually in a @Configuration class.
+            **Used in**: Methods inside a class annotated with @Configuration.
+            **Scope**: Used when you want to explicitly declare a bean and have fine control over its instantiation.
+    **Service**
+
+            **Purpose**: Marks a class as a service component, a special case of @Component.
+            **Used on**: Classes.
+            **Scope**: Used for service layer logic in your application (business logic).
 2. Diff between @Service and @Repository
+   Ans -   @Service and @Repository are both specializations of the @Component annotation, meaning Spring will automatically detect and register them during component scanning. However, they are intended for different layers of a typical Spring application and have some behavioral differences.
+    **Service**
+
+         **Purpose**: Indicates that a class provides business logic (service layer).
+         **Use Case**: Used to define a service class that contains business-related operations or orchestration of multiple data access calls.
+         **Behavior**: It doesn't add additional behavior beyond what @Component provides, except for classification.
+   **Repository**
+
+         **Purpose**: Indicates that a class is a Data Access Object (DAO) that interacts with the database.
+         **Use Case**: Used to define persistence layer classes (e.g., interacting with a database using JPA or JDBC).
+         **Behavior**: Adds exception translation via Spring’s PersistenceExceptionTranslationPostProcessor. That means Spring will automatically convert database-related exceptions into Spring’s DataAccessException.
 3. What is the Bean life cycle
+
+       **Container Started**: The Spring IoC container is initialized.
+       **Bean Instantiated**: The container creates an instance of the bean.
+       **Dependencies Injected**: The container injects the dependencies into the bean.
+       **Custom init() method**: If the bean implements InitializingBean or has a custom initialization method specified via @PostConstruct or init-method.
+       **Bean is Ready**: The bean is now fully initialized and ready to be used.
+       **Custom utility method**: This could be any custom method you have defined in your bean.
+       **Custom destroy() method**: If the bean implements DisposableBean or has a custom destruction method specified via @PreDestroy or destroy-method, it is called when the container is shutting down.
 4. What all annotation you have used in spring boot.
 5. when you change a property in application.yml in config, how does the client pick up the change automatically
 6. spring profiles
+
+       Ans - Spring Profiles allow you to define different configurations for different environments — like development, testing, and production — and activate only the relevant ones at runtime.
 7. how do we access a variable from application.properties file to class
+     
+       Ans -  Using @value annotation  @Value("${app.name}")   
 8. JPA and ORM - how do you define a table name in the spring boot application.
-9.  what is dependency injection and how many ways.
+9.  What is dependency injection and how many ways.
+    
+        Ans - Dependency Injection (DI) is a design pattern used by Spring Framework to achieve Inversion of Control (IoC) — instead of a class creating its dependencies, they are provided (injected) by the Spring container.
+        3 ways to inject dependency - 1. By Constructor injection 2. By setter injection 3. By Field injection
 10. what is GlobalExceptionHandler in spring boot and how do we implement it and its uses.
+    
+        Ans = In Spring Boot, the GlobalExceptionHandler is a centralized mechanism to handle 
+          exceptions that occur across the whole application, especially in REST APIs. 
+          Instead of handling exceptions in every controller method individually, 
+          you can use a global exception handler to catch and process exceptions in one place.
+         The GlobalExceptionHandler is a class annotated with **@ControllerAdvice** and typically used with **@ExceptionHandler** methods to catch exceptions thrown by controller methods and return a meaningful response.
 11. how do you return an object from a controller class.
 12. what is load balancer and how do we implement it in the service.
+    
+        Ans - A load balancer is a system or software that distributes incoming network traffic across multiple servers (instances of a service) to Improve availability, Enhance performance,Provide fault tolerance,Enable horizontal scaling.
+          In a microservice architecture, multiple instances of a service might run for scalability or fault tolerance. A load balancer decides which instance handles each request.
+          3 types of LB -  client side, server side, global/external
+          How to implement -  See Durgesh microservice YouTube video
 13. client side load balancer and server side load balancer.
 14. If I have a huge list of employees list and how can each employee has again a lot of data, in this scenario how do we improve the performance.(using parallel stream).
 15. How can we authenticate a request before that request hit actual api?
@@ -103,6 +152,8 @@
 19. How do we improve performance of our api?
 20. What does @configuration do
 21. What if there are 2 beans of the same type
+
+        Ans -  If we have 2 bean with same name then we use @Primary annotation, and in the @Qualifier annotation we have to specify the bean name @Qualifier("dieselEngine")
 22. What happens when we annotate a method with @transactional
 23. What are the types of advices in AOP
 24. Explain after returning and after throwing in AOP

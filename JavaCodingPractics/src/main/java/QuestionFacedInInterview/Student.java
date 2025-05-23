@@ -38,7 +38,8 @@ public class Student {
 
         String s5 =  new String("Mintu");
         String s6 =  new String("Mintu");
-        String s7 = s5;
+        String s7 = "Mintu";
+        String s8 = "Mintu";
         System.out.println(s5==s6);
         System.out.println(s5.equals(s6));
         System.out.println(s7==s5);
