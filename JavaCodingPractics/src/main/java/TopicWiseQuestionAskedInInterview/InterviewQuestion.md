@@ -155,19 +155,47 @@
 
         Ans -  If we have 2 bean with same name then we use @Primary annotation, and in the @Qualifier annotation we have to specify the bean name @Qualifier("dieselEngine")
 22. What happens when we annotate a method with @transactional
+    
+        Ans - When you annotate a method with @Transactional in Spring, you're telling Spring to wrap that method's execution in a database transaction.
+         When you annotate a method with @Transactional, Spring:
+         Starts a transaction before the method runs.
+         Commits the transaction if the method completes successfully.
+         Rolls back the transaction if a runtime exception (unchecked) or error occurs.
+         Executes all the above using a proxy (AOP - Aspect-Oriented Programming).
+         Note - @Transactional only works with Spring-managed beans.
+                If you call a transactional method on a new object you created with new, it won’t work. Transactions apply only to methods that interact with the database
 23. What are the types of advices in AOP
+
+        Ans - Before, After Returning, After Throwing, After (Finally), Around 
 24. Explain after returning and after throwing in AOP
 25. what is joinpoint and pointcut
+
+        Ans - Jointpoint - A JoinPoint is a specific point during the execution of a program where an aspect can be applied.
+              Pointcut - A Pointcut is an expression that selects one or more JoinPoints where the advice should run. Spring uses AspectJ expression syntax for pointcuts.
 26. How to implement composite key with entity
+
+        Ans -  Using @Embeddable and @EmbeddedId (Preferred Approach)   =  Google it for more info
 27. JPA and ORM
 28. @Qualifier and @Primary annotation
 29. what is pre-destroyed in spring
+
+         Ans - @PreDestroy is an annotation used to perform cleanup logic before a bean is destroyed. It marks a method to be called before the bean is removed from the Spring container. 
+               Typically used to release resources, close connections, or stop background threads. 
 30. what is post-construct in spring
+       
+         Ans - @PostConstruct is an annotation used to define initialization logic that runs after the bean's dependencies are injected, but before the bean is used.
+         Marks a method that should be called after the bean is fully constructed and dependencies are injected. Typically used to initialize resources, validate configurations, or start background tasks.
 31. When we annotate any class with @component annotation then spring register this class as bean in spring container
     and initialize that object. now If a service A is calling service B and after getting the response we want to set value
     in the bean in that case which annotation we use ?
+
+        Ans -  Using @PostConstruct    answer is in quest 30
 32. How to get the list of all bean in spring boot which is register in spring container?
+   
+        Ans -  Using ApplicationContect.getBeanDefinitionNames(), it will return array of string
 33. What is the default scope of bean?
+
+        Ans -  Singleton is default scope in spring.   all scope in spring - singleton, prototype, request, session,appliccation
 34. What are the benefits of using Spring Boot?
 35. Centralized request logging in spring boot login
 36. How to select profile in spring boot run time(hosting time)
