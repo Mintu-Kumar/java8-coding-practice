@@ -149,7 +149,7 @@
 16. How do we validate request parameter if a request come into controller level?
 17. Any annotation we use to validate a request on controller level?
 18. If an api return 1000 record in response then how do you do pagination?
-19. How do we improve performance of our api?
+    19. How do we improve performance of our api?
 20. What does @configuration do
 21. What if there are 2 beans of the same type
 

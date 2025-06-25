@@ -34,7 +34,7 @@ public class DuplicateCharecter {
                                             .collect(Collectors.toSet());
         System.out.println(duplicateElement);*/
 
-        /* Find second largest element fo array*/
+        /* Find second-largest element fo array*/
 /*
         int[] numbers = {10, 5, 8, 20, 15};
         int secondLargest =  Arrays.stream(numbers)

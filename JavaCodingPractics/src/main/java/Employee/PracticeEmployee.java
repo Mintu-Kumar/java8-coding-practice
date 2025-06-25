@@ -30,31 +30,32 @@ public class PracticeEmployee {
         /**
          * What is the average salary of male and female employees?
          */
-//       Map<String ,Double> map= employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.averagingDouble(Employee::getSalary)));
-//        System.out.println(map);
+       /* Map<String,Double> map =  employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.averagingDouble(Employee::getSalary)));
+        System.out.println(map);*/
+
         /**
          * 1. How many male and female employees are there in the organization?
          */
-//        Map<String,Long> count = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));
-//        System.out.println(count);
+
+        /*  Map<String,Long> map =   employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));
+        System.out.println(map);*/
         /**
          *  Print the name of all departments in the organization?
          */
-      //  employeeList.stream().map(e->e.getDepartment()).distinct().forEach(System.out::println);
+//          employeeList.stream().map(employee -> employee.getDepartment()).distinct().forEach(System.out::println);
         /**
          * What is the average age of male and female employees?
          */
-//        Map<String,Double> map =  employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.averagingDouble(Employee::getAge)));
-//        System.out.println(map);
+            /*Map<String,Double> map =  employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.averagingDouble(Employee::getAge)));
+            System.out.println(map);*/
         /**
          *  Get the details of highest paid employee in the organization?
          */
-    //   System.out.println( employeeList.stream().max(Comparator.comparing(Employee::getSalary)));
+       // System.out.println( employeeList.stream().collect(Collectors.maxBy(Comparator.comparing(Employee::getSalary))).get());
         /**
          * Get the names of all employees who have joined after 2015?
          */
-//        List<Employee> list =  employeeList.stream().filter(e->e.getYearOfJoining()> 2015).collect(Collectors.toList());
-//        System.out.println(list);
+       // employeeList.stream().filter(e->e.getYearOfJoining()>2015).forEach(System.out::println);
         /**
          * Count the number of employees in each department?
          */
